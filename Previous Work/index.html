@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Previous Work - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Zhehao Liang</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Previous Work</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#time-series-analysis-python" class="nav-link">Time Series Analysis (Python)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#detection-label-tool-for-dl" class="nav-link">Detection Label Tool for DL</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#wheat-spike-counting" class="nav-link">Wheat Spike Counting</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#change-detection" class="nav-link">Change Detection</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#hd-map-for-auto-driving" class="nav-link">HD map for Auto-Driving</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="time-series-analysis-python">Time Series Analysis (Python)</h2>
+<p>This code is a python reimplementation integration of typical time series analysis packages in R. Detailed API/tutorial please see <a href="http://https://github.com/px39n/GreenBrown" title="Github">Github</a> . It contains a range of R packages and methods reimplement like GeenBrown bfast, Strucchange.</p>
+<p>For now, It could be used to</p>
+<ul>
+<li>Detect Annual, Seasonal, and Short Structure change and Breakpoints based on OLS-SUM/differential method (or Differential or Recursive)</li>
+<li>Execute trend test like MK. Sctest</li>
+<li>Seasonal Decomposition: 1.Yt=Tt+An+Tm+St+rem 2. Yt=Tt+St+Res</li>
+<li>Preprocess and Spatial Statistics according to Annual Data.</li>
+</ul>
+<p>For example: 
+<strong>Seasonal Decomposition: </strong></p>
+<p><img src="https://github.com/px39n/GreenBrown/raw/main/data/ano.JPG?raw=true" width="400"/> </p>
+<p><strong>Summary</strong></p>
+<p><img src="https://github.com/px39n/GreenBrown/raw/main/data/table.JPG?raw=true" width="400"/> </p>
+<p><strong>Spatial Statistics</strong></p>
+<p><img src="https://github.com/px39n/GreenBrown/raw/main/data/timespace.JPG?raw=true" width="400"/> </p>
+<h2 id="detection-label-tool-for-dl">Detection Label Tool for DL</h2>
+<p>There are two Modes Can be selected
+Object Label Tool(only line support)</p>
+<p><img src="https://github.com/px39n/LabelWheat_points/blob/master/op.gif?raw=true" height="400" /></p>
+<p>Change detection(only polygon support)</p>
+<p><img src="https://github.com/px39n/LabelWheat_points/blob/master/op2.gif?raw=true" height="400" /></p>
+<h2 id="wheat-spike-counting">Wheat Spike Counting</h2>
+<p>For some reasons, the complete code cannot be released yet.</p>
+<p>Here is a demo on <strong><em><a href="https://colab.research.google.com/drive/1oIx7ymw9D52MdqMrzggfn4LmIG3OQyeg" title="Google Colab">Google Colab</a></em></strong></p>
+<p>Dataset</p>
+<ul>
+<li>Create labeled Wheat_multi_scale dataset(WMSD) including 33 images for current.</li>
+<li>Diversity includes spatial resolution(D), Plant growth stage, Camera View</li>
+</ul>
+<p>Model: 
+<a href="https://colab.research.google.com/drive/1oIx7ymw9D52MdqMrzggfn4LmIG3OQyeg#scrollTo=-f-jjZBKqIes">MCNN model on Google Colab</a>
+<a href="https://colab.research.google.com/drive/1XnuYC7Zja1QnJVx6fvbEmJjW0eCXLNhU?usp=sharing">WDCN model on Google Colab</a>
+<a href="https://docs.google.com/document/d/19SvvBv9TvnBNH9PCDPEJwj_M22tNus4HlqSmUcLgriI/edit?usp=sharing">Article on Google Doc</a></p>
+<ul>
+<li>Propose a adaptive line density map algorithm based on adaptive Gaussian kernel
+(Point Gaussian kernel sequence according to the length)</li>
+</ul>
+<p><img src="https://github.com/px39n/Wheat-Counting-Update/blob/master/train_sample.JPG?raw=true" height="200"/></p>
+<ul>
+<li>
+<p>Proposed a End to End Dilated network suitable for different scale scenes</p>
+</li>
+<li>
+<p>Evaluated two network MCNN and WDCN and compare thier accuracy on WMSD and spike</p>
+</li>
+<li>
+<p>Three images were used as pre-training due to average low value of WMSD line density map( easy to converge to 0)</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Network</th>
+<th>ovall-MAE</th>
+<th>overall-MSE</th>
+<th>SPIKE MAE</th>
+<th>overall</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MCNN</td>
+<td>8.73</td>
+<td>12.38</td>
+<td>7.25</td>
+<td></td>
+</tr>
+<tr>
+<td>Tasselnet</td>
+<td>9.7</td>
+<td>13.8</td>
+<td>5.96</td>
+<td></td>
+</tr>
+<tr>
+<td>WDCN</td>
+<td>4.41</td>
+<td>6.27</td>
+<td>2.83</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="change-detection">Change Detection</h2>
+<p>For some reasons, the complete code cannot be released yet.</p>
+<p>Here is a demo on <strong><em><a href="https://colab.research.google.com/drive/1oI5l_eL2AfwTmcNO-9xMVAivXDtDjj4x" title="Google Colab">Google Colab</a></em></strong></p>
+<h2 id="hd-map-for-auto-driving">HD map for Auto-Driving</h2>
+<p>The photos are collected by mobile phone through crowdsourcing . So accuracy is higher than 10m. In order to achieve cm level, SFM needs to be applied to reconstructure relative position.</p>
+<p>Study Area
+<img src="https://github.com/px39n/Wheat-Counting-Update/blob/master/study%20area.JPG?raw=true" height="400" /></p>
+<p>Nerual Network
+<img src="https://github.com/px39n/Wheat-Counting-Update/blob/master/nn.JPG?raw=true" height="400" /></p>
+<p>Use SFM method to enhance Position
+<img src="https://github.com/px39n/Wheat-Counting-Update/blob/master/sfm.JPG?raw=true" height="400" /></p>
+<p>Result Sample
+<img src="https://github.com/px39n/Wheat-Counting-Update/blob/master/res.JPG?raw=true" height="400" /></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
